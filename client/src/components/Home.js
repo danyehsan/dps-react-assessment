@@ -22,7 +22,7 @@ class Home extends Component {
       <Segment basic>
         <Segment basic textAlign='center'>
           <Image style={styles.centered} size='tiny' src={dpsLogo} alt='DevPoint Studios Logo' />
-          <Header as='h1' style={styles.header}>DevPoint Studios React Assessment</Header>
+          <Header as='h1' style={styles.header}>Suspension Brewery</Header>
         </Segment>
         <Grid>
           <Grid.Column computer={8} tablet={8} mobile={16}>
@@ -31,7 +31,7 @@ class Home extends Component {
                 as='h1'
                 textAlign='center'
                 style={styles.header}>
-                  Assessment Details:
+                  Our Story
               </Header>
               <Divider />
               <ReactMarkDown source={this.state.assignmentMarkdown} />
@@ -69,7 +69,9 @@ const styles = {
     margin: '0 auto',
   },
   header: {
-    color: '#2ecc40'
+    color: '#f0f0f0',
+    fontStyle: 'italic'
+
   }
 }
 
